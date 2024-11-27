@@ -1,0 +1,132 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  background-color: #f3f4f6; /* Soft light background */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: justify;
+}
+
+header {
+  background: #2b6777; /* Deep teal */
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 12px 12px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+nav {
+  margin: 1rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 8px 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background: #f4d160; /* Accent yellow */
+  color: #2b6777;
+}
+
+main {
+  background: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+}
+
+#about-me h2,
+#welcome-note h2 {
+  color: #2b6777; /* Matching header color */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#about-me p,
+#welcome-note p {
+  text-align: justify; /* Justified for readability */
+  margin-bottom: 1.5rem;
+  color: #4b4b4b; /* Subtle dark gray */
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  background: #2b6777;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+#back-to-top:hover {
+  background: #f4d160; /* Yellow on hover */
+  color: #2b6777;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 2rem;
+  background: #2b6777;
+  color: #fff;
+  width: 100%;
+  margin-top: 2rem;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px 12px 0 0;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    margin: 0 10px;
+    padding: 6px 10px;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  #back-to-top {
+    padding: 10px 15px;
+  }
+}
